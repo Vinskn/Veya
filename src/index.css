@@ -1,2 +1,28 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  /* SPACE BACKGROUND & LAYOUT */
+  --color-bg-main: #0b0e14;        /* Deep Space Black (Dasar utama) */
+  --color-bg-surface: #161b26;     /* Card/Container (sedikit lebih terang) */
+  --color-bg-elevated: #212836;    /* Hover state / Dropdown */
+  
+  /* TEXT COLORS (Optimized for Dark Mode) */
+  --color-text-main: #e2e8f0;      /* Teks utama (Off-white/Silver) */
+  --color-text-muted: #94a3b8;     /* Teks sekunder (Muted grey-blue) */
+  
+  /* THEME ACCENTS (Purple & Space Nebula) */
+  --color-space-purple: #9d4edd;   /* Primary Purple (Vibrant but deep) */
+  --color-space-violet: #5a189a;   /* Darker Violet untuk gradasi */
+  --color-space-cyan: #4cc9f0;     /* Accent Cyan (untuk elemen teknologi/HUD) */
+  --color-space-pink: #f72585;     /* Accent Pink (untuk alert/high priority) */
+
+  /* GAME STATUS ELEMENTS */
+  --color-game-success: #00f5d4;   /* Ready / Online */
+  --color-game-warning: #fee440;   /* XP / Gold / Level Up */
+  --color-game-danger: #ff477e;    /* Quit / Health Low */
+
+  /* BORDERS & EFFECTS */
+  --color-space-border: #2d3748;   /* Border tipis agar container tetap terlihat */
+  --color-space-glow: rgba(157, 78, 221, 0.3); /* Untuk efek shadow neon */
+}
