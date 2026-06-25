@@ -5,9 +5,8 @@ import express from 'express';
 import http from 'http';
 import cors from 'cors';
 import { Server } from 'socket.io';
-import type { RoomType, TConversar } from './types/index.ts';
-import { registerConversar } from './games/Conversar/registerConversar.ts';
-import { registerSankhya } from './games/Sankhya/registerSankhya.ts';
+import { registerConversar } from './games/Conversar/registerConversar.js';
+import { registerSankhya } from './games/Sankhya/registerSankhya.js';
 
 const app = express();
 
