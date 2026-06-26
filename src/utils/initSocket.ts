@@ -9,6 +9,10 @@ export const initSocket = (namespace: string) => {
 };
 
 const sockets: Record<string, Socket> = {};
+const socketOptions = {
+  transports: ['websocket'],
+  upgrade: false,
+};
 
 export const getSocket = (
   namespace: string
@@ -16,7 +20,8 @@ export const getSocket = (
 
   if (!sockets[namespace]) {
     sockets[namespace] = io(
-      `${import.meta.env.VITE_SOCKET_URL}/${namespace}`
+      `${import.meta.env.VITE_SOCKET_URL}/${namespace}`,
+      socketOptions
     );
   }
 
