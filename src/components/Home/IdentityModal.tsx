@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { IdentityModalProps } from '../../../types/componentTypes';
+import type { IdentityModalProps } from '../../types/componentTypes';
 import { Sparkles, X } from 'lucide-react';
 import { useUserManagement } from '../../hooks/useUserManagement';
 

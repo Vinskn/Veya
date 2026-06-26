@@ -1,4 +1,4 @@
-import type { ChatBubbleProps } from '../../../types/componentTypes';
+import type { ChatBubbleProps } from '../../types/componentTypes';
 import { getAvatarUrl } from '../../utils/getAvatarUrl';
 
 export const ChatBubble = ({ message, sender, position }: ChatBubbleProps) => {

@@ -1,5 +1,5 @@
 import { Star } from 'lucide-react';
-import type { GameCardProps, SubmitData } from '../../../types/componentTypes';
+import type { GameCardProps, SubmitData } from '../../types/componentTypes';
 import { useNavigate } from '@tanstack/react-router';
 import { useState } from 'react';
 import { IdentityModal } from './IdentityModal';
