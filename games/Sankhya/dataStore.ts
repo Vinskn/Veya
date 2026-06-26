@@ -1,5 +1,5 @@
 import type { checkAnswerResult, SankhyaStorage, startGameData, StartGamePayload } from '../../types/SankhyaType';
-import { questionMaker } from './questionMaker.ts';
+import { questionMaker } from './questionMaker';
 
 const sankhyaDataStore: SankhyaStorage = {};
 const sankhyaStartGameData: startGameData = {};
