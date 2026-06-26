@@ -1,6 +1,6 @@
 import { Server, Socket } from 'socket.io';
-import { addPlayer, checkAnswer, checkRoomExists, createRoom, deleteRoom, endGame, getAllRooms, getCurrentQuestion, getPlayerName, getRoomData, getRoomHost, isUserExist, startGame } from './dataStore';
-import type { JoinRoomPayload, StartGamePayload } from '../../types/SankhyaType';
+import { addPlayer, checkAnswer, checkRoomExists, createRoom, deleteRoom, endGame, getAllRooms, getCurrentQuestion, getPlayerName, getRoomData, getRoomHost, isUserExist, startGame } from './dataStore.js';
+import type { JoinRoomPayload, StartGamePayload } from '../../types/SankhyaType.js';
 
 export const registerSankhya = (io: Server) => {
   const nsp = io.of('/sankhya');
