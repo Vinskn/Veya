@@ -1,7 +1,10 @@
 import { io, Socket } from 'socket.io-client';
 
 export const initSocket = (namespace: string) => {
-  const socket = io(`${import.meta.env.VITE_SOCKET_URL}/${namespace}`);
+  const socket = io(`${import.meta.env.VITE_SOCKET_URL}/${namespace}`, {
+    transports: ['websocket'],
+    upgrade: false,
+  });
   return socket;
 };
 
