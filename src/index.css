@@ -25,4 +25,6 @@
   /* BORDERS & EFFECTS */
   --color-space-border: #2d3748;   /* Border tipis agar container tetap terlihat */
   --color-space-glow: rgba(157, 78, 221, 0.3); /* Untuk efek shadow neon */
+
+  --color-space-red: #ff0000;
 }
