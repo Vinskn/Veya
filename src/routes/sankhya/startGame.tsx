@@ -130,7 +130,8 @@ function RouteComponent() {
           <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 max-w-lg mx-auto relative z-10">
             <input
               inputMode="numeric"
-              type="number"
+              type="text"
+              pattern="[0-9\-]*"
               placeholder="Enter computation..."
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
