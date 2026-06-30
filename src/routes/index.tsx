@@ -20,20 +20,6 @@ const gameListDummy = [
     image: "/veyaLogo.png",
     gamePath: "/sankhya",
   },
-  {
-    title: "Card Title",
-    description: "A card component has a figure, a body part, and inside body there are title and actions parts",
-    rating: "4.5",
-    image: "/veyaLogo.png",
-    gamePath: "/",
-  },
-  {
-    title: "Card Title",
-    description: "A card component has a figure, a body part, and inside body there are title and actions parts",
-    rating: "4.5",
-    image: "/veyaLogo.png",
-    gamePath: "/",
-  },
 ];
 
 function HomePage() {
