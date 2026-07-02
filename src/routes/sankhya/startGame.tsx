@@ -180,7 +180,7 @@ function RouteComponent() {
                   placeholder="Enter computation..."
                   value={answer}
                   onChange={(e) => setAnswer(e.target.value)}
-                  className="input input-lg flex-1 bg-bg-main border-2 border-space-border focus:border-space-cyan focus:shadow-[0_0_15px_rgba(76,201,240,0.3)] text-center md:text-left font-mono font-bold text-xl placeholder:tracking-widest placeholder:text-sm transition-all h-16"
+                  className="input input-lg flex-1 text-white bg-bg-main border-2 border-space-border focus:border-space-cyan focus:shadow-[0_0_15px_rgba(76,201,240,0.3)] text-center md:text-left font-mono font-bold text-xl placeholder:tracking-widest placeholder:text-sm transition-all h-16"
                   autoFocus
                   disabled={true}
                 />

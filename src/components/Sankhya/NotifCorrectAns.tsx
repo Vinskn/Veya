@@ -1,8 +1,10 @@
+import { useDeviceWidth } from '../../hooks/useDeviceWidth';
 import type { checkAnswerResult } from '../../types/gamesTypes/sakhya';
 
 export const NotifCorrectAns = ({ playerName }: Partial<checkAnswerResult>) => {
+  const { deviceType } = useDeviceWidth();
   return (
-    <div className="flex items-center gap-4 bg-linear-to-r from-game-success/20 to-transparent border-l-4 border-y border-y-game-success/10 border-l-game-success p-4 rounded-xl shadow-[0_0_20px_rgba(0,245,212,0.3)] animate-in slide-in-from-bottom-2 zoom-in-95 duration-500 relative overflow-hidden">
+    <div className={`flex items-center gap-4 p-4 rounded-xl shadow-[0_0_20px_rgba(0,245,212,0.3)] animate-in slide-in-from-bottom-2 zoom-in-95 duration-500 relative overflow-hidden ${deviceType === 'small' ? 'top-20 bg-linear-to-r from-game-success to-transparent border-l-4 border-y border-y-game-success border-l-game-success' : 'top-10 bg-linear-to-r from-game-success/20 to-transparent border-l-4 border-y border-y-game-success/10 border-l-game-success'}`}>
       {/* Pulse background effect */}
       <div className="absolute inset-0 bg-game-success/5 animate-pulse rounded-xl" />
 
@@ -19,7 +21,7 @@ export const NotifCorrectAns = ({ playerName }: Partial<checkAnswerResult>) => {
       </div>
       <div className="relative">
         <h3 className="font-black text-white tracking-wider text-[15px] drop-shadow-[0_0_5px_rgba(0,245,212,0.8)] uppercase">
-          <span className="text-game-success animate-pulse">{playerName || 'Someone'}</span> STRUCK FIRST!
+          <span className={` animate-pulse ${deviceType === 'small' ? 'text-black' : 'text-game-success'}`}>{playerName || 'Someone'}</span> STRUCK FIRST!
         </h3>
         <p className="text-[13px] text-game-success/90 mt-1 font-semibold tracking-wide">Calculation verified. Energy obtained! ⚡</p>
       </div>
